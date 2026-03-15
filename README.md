@@ -6,7 +6,7 @@ A comprehensive guide and implementation for programmatically interacting with D
 
 Decentralized exchanges have revolutionized the way we trade cryptocurrencies. Unlike traditional exchanges that rely on centralized order books, DEXs use automated market makers (AMMs) to facilitate trades directly between users through smart contracts. This project provides practical examples and reusable contracts for interacting with these protocols.
 
-The implementation focuses on Uniswap V2 and V3, the most widely adopted AMM protocols, showing how to create contracts that can swap tokens, provide liquidity, and manage positions programmatically.
+The implementation focuses on Uniswap V4, the latest AMM protocol, showing how to create contracts that can swap tokens, provide liquidity, and implement custom logic through hooks.
 
 ## Key Concepts
 
@@ -50,12 +50,13 @@ To exit a position, you burn your LP tokens and receive back your share of the t
 
 This project includes Solidity contracts that demonstrate:
 
-### Uniswap V2 Integration
+### Uniswap V4 Integration
 
-The contracts show proper usage of the `IUniswapV2Router02` interface, handling token approvals, and executing swaps. They include safety checks like minimum output amounts (slippage protection) and path specification for multi-hop trades.
+The contracts demonstrate proper usage of the PoolManager, hook interfaces, and token approvals. They include safety checks and showcase how to execute swaps and provide liquidity in Uniswap V4's architecture, which supports custom logic through hooks.
 
 ## Further Reading
 
-- [Uniswap V2 Documentation](https://uniswap.org/docs/v2/)
-- [Uniswap V3 Documentation](https://uniswap.org/docs/v3/)
+- [Uniswap V4 Documentation](https://docs.uniswap.org/Concepts/V4/Overview)
+- [Uniswap V4 Core](https://github.com/uniswap/v4-core)
+- [Uniswap V4 Periphery](https://github.com/uniswap/v4-periphery)
 - [Ethereum Improvement Proposal 20](https://eips.ethereum.org/EIPS/eip-20) (ERC-20 Token Standard)
