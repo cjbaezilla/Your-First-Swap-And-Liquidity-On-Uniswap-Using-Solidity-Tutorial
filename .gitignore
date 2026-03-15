@@ -2,3 +2,4 @@ opencode.json
 prompts/
 node_modules/
 artifacts/
+.env
